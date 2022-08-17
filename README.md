@@ -7,3 +7,4 @@ Sistema de controle de músicos e instrumentos
 
 - [X] Classe: musico.Musico
 - [X] Classe:instrumento.Instrumento
+- [X] Interface: instrumento.corda.Distorcao
