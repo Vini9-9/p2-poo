@@ -1,6 +1,6 @@
 package com.spessoa.instrumento;
 
-public class Instrumento {
+public abstract class Instrumento {
 
   /*
   Atributos: marca, numeroLoteFabricacao
@@ -10,9 +10,7 @@ public class Instrumento {
   private String marca;
   private long numeroLoteFabricacao;
 
-  public void emitirSom(){
-
-  }
+  public abstract String emitirSom();
 
   @Override
   public String toString() {
