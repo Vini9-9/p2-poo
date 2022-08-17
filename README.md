@@ -6,3 +6,4 @@ Sistema de controle de músicos e instrumentos
 1) Domínio da aplicação:
 
 - [X] Classe: musico.Musico
+- [X] Classe:instrumento.Instrumento
