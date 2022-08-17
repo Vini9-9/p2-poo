@@ -9,4 +9,5 @@ Sistema de controle de músicos e instrumentos
 - [X] Classe:instrumento.Instrumento
 - [X] Interface: instrumento.corda.Distorcao
 - [X] Classe: instrumento.corda.Guitarra
-- 
+- [X] Classe: instrumento.corda.Violao
+- [ ] 
