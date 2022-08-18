@@ -25,8 +25,7 @@ public class Principal {
       System.out.println("2- Adicionar Guitarra");
       System.out.println("3- Adicionar Violão");
       System.out.println("4- Adicionar Piano");
-      System.out.println("5- Listar todos os instrumentos");
-      System.out.println("6- Tocar instrumentos");
+      System.out.println("5- Tocar instrumentos");
       System.out.println("0- Sair");
       System.out.println("----------------");
 
@@ -58,7 +57,7 @@ public class Principal {
           System.out.println("Digite o número do lote de fabricação:");
           guitarra.setNumeroLoteFabricacao(entrada.nextLong());
           System.out.println("Digite o número de cordas:");
-          guitarra.setNumeroCordas(entrada.nextInt());
+          guitarra.setNumeroCordas((int) entrada.nextLong());
           ArrayList arrayInstrumentos = musico.getInstrumentos();
           arrayInstrumentos.add(guitarra);
           musico.setInstrumentos(arrayInstrumentos);
@@ -104,9 +103,9 @@ public class Principal {
           System.out.println("Digite o número do lote de fabricação:");
           piano.setNumeroLoteFabricacao(entrada.nextLong());
           System.out.println("Digite o número de pedais:");
-          piano.setNumeroPedais(entrada.nextInt());
+          piano.setNumeroPedais((int) entrada.nextLong());
           System.out.println("Digite o número de teclas:");
-          piano.setNumeroTeclas(entrada.nextInt());
+          piano.setNumeroTeclas((int) entrada.nextLong());
 
           System.out.println("Piano é digital? (True/ False)");
           piano.setDigital(entrada.nextBoolean());
@@ -135,11 +134,11 @@ public class Principal {
           }
 
           break;
-        }/*
+        }
         case 5: {
-          imprimirContatos(controleAgenda.getContatos());
+          System.out.println(musico.getInstrumentos());
           break;
-        }*/
+        }
         case 0: {
           System.out.println("Obrigado por usar a Agenda.");
           System.exit(opcao);
