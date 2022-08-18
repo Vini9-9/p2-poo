@@ -1,6 +1,7 @@
 package com.spessoa.musico;
 
 import com.spessoa.instrumento.Instrumento;
+import com.spessoa.instrumento.corda.Distorcao;
 import java.util.ArrayList;
 
 public class Musico {
@@ -9,11 +10,18 @@ public class Musico {
   private ArrayList<Instrumento> instrumentos;
 
   /*
-  No métodos tocarInstrumento(), da classe Musico, deve-se percorre a lista de instrumentos do músico e chama o método emitirSom(),
+  No métodos tocarInstrumento(), da classe Musico,
+  deve-se percorre a lista de instrumentos do músico e chama o método emitirSom(),
   verificando também se o instrumento tem Distorção para chamar o métodos emitirSomDistorcao()
   */
   public void tocarInstrumento(){
-    System.out.println("Tocando " + instrumentos.toString());
+    for (Instrumento instrumento: instrumentos
+    ) {
+      instrumento.emitirSom();
+      if(instrumento instanceof Distorcao){
+        ((Distorcao) instrumento).emitirSomDistorcido();
+      }
+    }
   }
 
   @Override
