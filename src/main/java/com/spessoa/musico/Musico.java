@@ -17,9 +17,9 @@ public class Musico {
   public void tocarInstrumento(){
     for (Instrumento instrumento: instrumentos
     ) {
-      instrumento.emitirSom();
+      System.out.println(instrumento.emitirSom());
       if(instrumento instanceof Distorcao){
-        ((Distorcao) instrumento).emitirSomDistorcido();
+        System.out.println(((Distorcao) instrumento).emitirSomDistorcido());
       }
     }
   }
