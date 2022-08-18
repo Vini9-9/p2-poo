@@ -1,6 +1,7 @@
 package com.spessoa.visao;
 
 import com.spessoa.modelo.instrumento.corda.Guitarra;
+import com.spessoa.modelo.instrumento.corda.Violao;
 import com.spessoa.modelo.musico.Musico;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -55,34 +56,30 @@ public class Principal {
           arrayInstrumentos.add(guitarra);
           musico.setInstrumentos(arrayInstrumentos);
 
-          break;
-        }/*
-        case 3: {
-          System.out.println("Digite o email:");
-          Pessoa contatoEncontrado = controleAgenda.buscarContato(entrada.nextLine());
-          if(contatoEncontrado != null){
-            System.out.println("Digite o nome:");
-            String nome = entrada.nextLine();
+          System.out.println("----------------");
+          System.out.println("Guitarra adicionada com Sucesso");
+          System.out.println(guitarra.toString());
 
-            System.out.println("Digite o telefone:");
-            String telefone = entrada.nextLine();
-
-            System.out.println("Digite o email:");
-            String email = entrada.nextLine();
-
-            System.out.println("Ano de nascimento:");
-            Integer anoNascimento = Integer.parseInt(entrada.nextLine());
-
-            System.out.println("Digite o tipo sanguineo:");
-            String tipoSanguineo = entrada.nextLine();
-
-            controleAgenda.atualizarContato(contatoEncontrado, nome, telefone, email, anoNascimento, tipoSanguineo);
-            System.out.println("----------------");
-            System.out.println("Contato atualizado:");
-            System.out.println(contatoEncontrado.toString());
-          }
           break;
         }
+        case 3: {
+
+          Violao violao = new Violao();
+          System.out.println("Digite o nome da marca:");
+          violao.setMarca(entrada.nextLine());
+          System.out.println("Digite o número do lote de fabricação:");
+          violao.setNumeroLoteFabricacao(entrada.nextLong());
+          ArrayList arrayInstrumentos =  musico.getInstrumentos();
+          arrayInstrumentos.add(violao);
+          musico.setInstrumentos(arrayInstrumentos);
+
+          System.out.println("----------------");
+          System.out.println("Violão adicionada com Sucesso");
+          System.out.println(violao.toString());
+
+          }
+          break;
+        /*
         case 4: {
           System.out.println("Digite o email:");
           Pessoa contatoEncontrado = controleAgenda.buscarContato(entrada.nextLine());
