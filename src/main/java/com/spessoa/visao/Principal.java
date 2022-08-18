@@ -136,7 +136,7 @@ public class Principal {
           break;
         }
         case 5: {
-          System.out.println(musico.getInstrumentos());
+          musico.tocarInstrumento();
           break;
         }
         case 0: {
