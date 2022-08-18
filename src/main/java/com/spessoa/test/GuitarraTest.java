@@ -38,4 +38,15 @@ class GuitarraTest {
     assertEquals(marca, guitarra.getMarca());
   }
 
+  @Test
+  public void testeaToStringGuitarra() {
+    String esperado = "Guitarra{" +
+        "numeroCordas=" + numCorda +
+        '}';
+
+    assertEquals(esperado, guitarra.toString());
+  }
+
+
+
 }

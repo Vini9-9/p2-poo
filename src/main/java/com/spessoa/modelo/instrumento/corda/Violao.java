@@ -32,4 +32,8 @@ public class Violao extends Instrumento implements Distorcao {
         "numeroCordas=" + numeroCordas +
         '}';
   }
+
+  public void setNumeroCordas(int numeroCordas) {
+    this.numeroCordas = numeroCordas;
+  }
 }
