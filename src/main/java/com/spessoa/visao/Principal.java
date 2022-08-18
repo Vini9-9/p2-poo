@@ -34,6 +34,7 @@ public class Principal {
 
       switch (opcao) {
         case 1: {
+          try {
           System.out.println("Digite o nome:");
           String nome = entrada.nextLine();
 
@@ -42,11 +43,15 @@ public class Principal {
           System.out.println("----------------");
           System.out.println("Nome atualizado com Sucesso");
           System.out.println(musico.toString());
+        } catch(Exception ex){
+          System.out.println("Ocorreu um erro inesperado");
+          System.out.println("Tente novamente");
+        }
 
           break;
         }
         case 2: {
-
+          try {
           Guitarra guitarra = new Guitarra();
           System.out.println("Digite o nome da marca:");
           guitarra.setMarca(entrada.nextLine());
@@ -61,11 +66,15 @@ public class Principal {
           System.out.println("----------------");
           System.out.println("Guitarra adicionada com Sucesso");
           System.out.println(guitarra.toString());
+        } catch(Exception ex){
+          System.out.println("Ocorreu um erro inesperado");
+          System.out.println("Tente novamente");
+        }
 
           break;
         }
         case 3: {
-
+      try {
           Violao violao = new Violao();
           System.out.println("Digite o nome da marca:");
           violao.setMarca(entrada.nextLine());
@@ -78,6 +87,10 @@ public class Principal {
           System.out.println("----------------");
           System.out.println("Violão adicionado com Sucesso");
           System.out.println(violao.toString());
+        } catch(Exception ex){
+          System.out.println("Ocorreu um erro inesperado");
+          System.out.println("Tente novamente");
+        }
 
           break;
         }
@@ -118,6 +131,7 @@ public class Principal {
 
           } catch(Exception ex){
             System.out.println("Ocorreu um erro inesperado");
+            System.out.println("Tente novamente");
           }
 
           break;
