@@ -1,6 +1,6 @@
-package com.spessoa.instrumento.piano;
+package com.spessoa.modelo.instrumento.piano;
 
-import com.spessoa.instrumento.Instrumento;
+import com.spessoa.modelo.instrumento.Instrumento;
 import java.util.ArrayList;
 
 public class Piano extends Instrumento {

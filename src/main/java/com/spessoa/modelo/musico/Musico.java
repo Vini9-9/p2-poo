@@ -1,7 +1,7 @@
-package com.spessoa.musico;
+package com.spessoa.modelo.musico;
 
-import com.spessoa.instrumento.Instrumento;
-import com.spessoa.instrumento.corda.Distorcao;
+import com.spessoa.modelo.instrumento.Instrumento;
+import com.spessoa.modelo.instrumento.corda.Distorcao;
 import java.util.ArrayList;
 
 public class Musico {

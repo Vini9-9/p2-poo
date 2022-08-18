@@ -1,4 +1,4 @@
-package com.spessoa.instrumento.corda;
+package com.spessoa.modelo.instrumento.corda;
 
 public interface Distorcao {
 

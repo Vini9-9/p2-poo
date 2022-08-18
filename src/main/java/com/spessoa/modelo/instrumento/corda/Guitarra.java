@@ -1,6 +1,6 @@
-package com.spessoa.instrumento.corda;
+package com.spessoa.modelo.instrumento.corda;
 
-import com.spessoa.instrumento.Instrumento;
+import com.spessoa.modelo.instrumento.Instrumento;
 
 public class Guitarra extends Instrumento implements Distorcao{
 

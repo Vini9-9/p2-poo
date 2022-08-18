@@ -1,4 +1,4 @@
-package com.spessoa.instrumento.piano;
+package com.spessoa.modelo.instrumento.piano;
 
 public class Armario {
 

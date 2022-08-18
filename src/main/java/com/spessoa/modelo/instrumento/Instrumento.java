@@ -1,4 +1,4 @@
-package com.spessoa.instrumento;
+package com.spessoa.modelo.instrumento;
 
 public abstract class Instrumento {
 
