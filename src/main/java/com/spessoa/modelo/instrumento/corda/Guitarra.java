@@ -20,14 +20,18 @@ public class Guitarra extends Instrumento implements Distorcao{
     return "Som distorcido de guitarra";
   }
 
-  public int getNumCordas() {
-    return numeroCordas;
-  }
-
   @Override
   public String toString() {
     return "Guitarra{" +
         "numeroCordas=" + numeroCordas +
         '}';
+  }
+
+  public int getNumeroCordas() {
+    return numeroCordas;
+  }
+
+  public void setNumeroCordas(int numeroCordas) {
+    this.numeroCordas = numeroCordas;
   }
 }
