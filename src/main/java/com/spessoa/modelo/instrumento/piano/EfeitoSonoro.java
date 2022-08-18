@@ -8,4 +8,11 @@ public class EfeitoSonoro {
 
   private String efeitoSonoro;
 
+  public String getEfeitoSonoro() {
+    return efeitoSonoro;
+  }
+
+  public void setEfeitoSonoro(String efeitoSonoro) {
+    this.efeitoSonoro = efeitoSonoro;
+  }
 }
