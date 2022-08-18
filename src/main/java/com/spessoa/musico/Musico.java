@@ -6,17 +6,21 @@ import java.util.ArrayList;
 public class Musico {
 
   private String nome;
-  private ArrayList<Instrumento> intrumentos;
+  private ArrayList<Instrumento> instrumentos;
 
-  public void tocarInstrumento(Instrumento instrumento){
-    System.out.println("Tocando " + instrumento.toString());
+  /*
+  No métodos tocarInstrumento(), da classe Musico, deve-se percorre a lista de instrumentos do músico e chama o método emitirSom(),
+  verificando também se o instrumento tem Distorção para chamar o métodos emitirSomDistorcao()
+  */
+  public void tocarInstrumento(){
+    System.out.println("Tocando " + instrumentos.toString());
   }
 
   @Override
   public String toString() {
     return "Musico{" +
         "nome='" + nome + '\'' +
-        ", intrumentos=" + intrumentos +
+        ", instrumentos=" + instrumentos +
         '}';
   }
 
@@ -28,11 +32,11 @@ public class Musico {
     this.nome = nome;
   }
 
-  public ArrayList<Instrumento> getIntrumentos() {
-    return intrumentos;
+  public ArrayList<Instrumento> getInstrumentos() {
+    return instrumentos;
   }
 
-  public void setIntrumentos(ArrayList<Instrumento> intrumentos) {
-    this.intrumentos = intrumentos;
+  public void setInstrumentos(ArrayList<Instrumento> instrumentos) {
+    this.instrumentos = instrumentos;
   }
 }
