@@ -1,6 +1,8 @@
 package com.spessoa.visao;
 
+import com.spessoa.modelo.instrumento.corda.Guitarra;
 import com.spessoa.modelo.musico.Musico;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Principal {
@@ -16,10 +18,12 @@ public class Principal {
       System.out.println("\n");
       System.out.println("Digite uma opção:");
       System.out.println("1- Atualizar nome");
-      System.out.println("2- Adicionar Instrumento");
-      System.out.println("3- Remover contato");
-      System.out.println("4- Listar todos os instrumentos");
-      System.out.println("5- Tocar instrumentos");
+      System.out.println("2- Adicionar Guitarra");
+      System.out.println("3- Adicionar Violão");
+      System.out.println("4- Adicionar Piano");
+      System.out.println("5- Remover contato");
+      System.out.println("6- Listar todos os instrumentos");
+      System.out.println("7- Tocar instrumentos");
       System.out.println("0- Sair");
       System.out.println("----------------");
 
@@ -38,19 +42,21 @@ public class Principal {
 
           break;
         }
-        /*case 2: {
-          System.out.println("Digite o email:");
-          Pessoa contatoEncontrado = controleAgenda.buscarContato(entrada.nextLine());
-          if(contatoEncontrado != null){
-            System.out.println("----------------");
-            System.out.println("Contato Encontrado com Sucesso");
-            System.out.println(contatoEncontrado.toString());
-          } else {
-            System.out.println("----------------");
-            System.out.println("Contato não encontrado");
-          }
+        case 2: {
+
+          Guitarra guitarra = new Guitarra();
+          System.out.println("Digite o nome da marca:");
+          guitarra.setMarca(entrada.nextLine());
+          System.out.println("Digite o número do lote de fabricação:");
+          guitarra.setNumeroLoteFabricacao(entrada.nextLong());
+          System.out.println("Digite o número de cordas:");
+          guitarra.setNumeroCordas(entrada.nextInt());
+          ArrayList arrayInstrumentos =  musico.getInstrumentos();
+          arrayInstrumentos.add(guitarra);
+          musico.setInstrumentos(arrayInstrumentos);
+
           break;
-        }
+        }/*
         case 3: {
           System.out.println("Digite o email:");
           Pessoa contatoEncontrado = controleAgenda.buscarContato(entrada.nextLine());
