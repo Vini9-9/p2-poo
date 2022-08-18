@@ -21,7 +21,7 @@ public class Piano extends Instrumento {
   private ArrayList<EfeitoSonoro> efeitoSonoros;
 
   public void adicionarEfeitoSonoro(EfeitoSonoro efeitoSonoro){
-    //TO DO
+    efeitoSonoros.add(efeitoSonoro);
   }
 
   @Override
@@ -37,7 +37,7 @@ public class Piano extends Instrumento {
 
   @Override
   public String emitirSom() {
-    return null;
+    return "Som de Piano";
   }
 
   public int getNumeroPedais() {
