@@ -12,3 +12,4 @@ Sistema de controle de músicos e instrumentos
 - [X] Classe: instrumento.corda.Violao
 - [X] Classe: instrumento.piano.Piano
 - [X] Classe: instrumento.piano.EfeitoSonoro
+- [X] Classe: instrumento.piano.Armario
