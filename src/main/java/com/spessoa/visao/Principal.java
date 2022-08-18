@@ -2,6 +2,9 @@ package com.spessoa.visao;
 
 import com.spessoa.modelo.instrumento.corda.Guitarra;
 import com.spessoa.modelo.instrumento.corda.Violao;
+import com.spessoa.modelo.instrumento.piano.Armario;
+import com.spessoa.modelo.instrumento.piano.EfeitoSonoro;
+import com.spessoa.modelo.instrumento.piano.Piano;
 import com.spessoa.modelo.musico.Musico;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -22,9 +25,8 @@ public class Principal {
       System.out.println("2- Adicionar Guitarra");
       System.out.println("3- Adicionar Violão");
       System.out.println("4- Adicionar Piano");
-      System.out.println("5- Remover contato");
-      System.out.println("6- Listar todos os instrumentos");
-      System.out.println("7- Tocar instrumentos");
+      System.out.println("5- Listar todos os instrumentos");
+      System.out.println("6- Tocar instrumentos");
       System.out.println("0- Sair");
       System.out.println("----------------");
 
@@ -52,7 +54,7 @@ public class Principal {
           guitarra.setNumeroLoteFabricacao(entrada.nextLong());
           System.out.println("Digite o número de cordas:");
           guitarra.setNumeroCordas(entrada.nextInt());
-          ArrayList arrayInstrumentos =  musico.getInstrumentos();
+          ArrayList arrayInstrumentos = musico.getInstrumentos();
           arrayInstrumentos.add(guitarra);
           musico.setInstrumentos(arrayInstrumentos);
 
@@ -69,29 +71,57 @@ public class Principal {
           violao.setMarca(entrada.nextLine());
           System.out.println("Digite o número do lote de fabricação:");
           violao.setNumeroLoteFabricacao(entrada.nextLong());
-          ArrayList arrayInstrumentos =  musico.getInstrumentos();
+          ArrayList arrayInstrumentos = musico.getInstrumentos();
           arrayInstrumentos.add(violao);
           musico.setInstrumentos(arrayInstrumentos);
 
           System.out.println("----------------");
-          System.out.println("Violão adicionada com Sucesso");
+          System.out.println("Violão adicionado com Sucesso");
           System.out.println(violao.toString());
 
-          }
-          break;
-        /*
-        case 4: {
-          System.out.println("Digite o email:");
-          Pessoa contatoEncontrado = controleAgenda.buscarContato(entrada.nextLine());
-          if(contatoEncontrado != null){
-            controleAgenda.removerContato(contatoEncontrado);
-            System.out.println("Contato com id " + contatoEncontrado.getId() + " removida.");
-          } else{
-            System.out.println("----------------");
-            System.out.println("Contato não encontrado");
-          }
           break;
         }
+        case 4: {
+
+          try {
+
+          Piano piano = new Piano();
+          System.out.println("Digite o nome da marca:");
+          piano.setMarca(entrada.nextLine());
+          System.out.println("Digite o número do lote de fabricação:");
+          piano.setNumeroLoteFabricacao(entrada.nextLong());
+          System.out.println("Digite o número de pedais:");
+          piano.setNumeroPedais(entrada.nextInt());
+          System.out.println("Digite o número de teclas:");
+          piano.setNumeroTeclas(entrada.nextInt());
+
+          System.out.println("Piano é digital? (True/ False)");
+          piano.setDigital(entrada.nextBoolean());
+
+          Armario armario = new Armario();
+          System.out.println("Digite o tipo de Madeira do armario:");
+          armario.setTipoMadeira(entrada.nextLine());
+          piano.setArmario(armario);
+
+          EfeitoSonoro es = new EfeitoSonoro();
+          System.out.println("Digite o efeito sonoro do Piano:");
+          es.setEfeitoSonoro(entrada.nextLine());
+          piano.adicionarEfeitoSonoro(es);
+
+          ArrayList arrayInstrumentos = musico.getInstrumentos();
+          arrayInstrumentos.add(piano);
+          musico.setInstrumentos(arrayInstrumentos);
+
+          System.out.println("----------------");
+          System.out.println("Piano adicionado com Sucesso");
+          System.out.println(piano.toString());
+
+          } catch(Exception ex){
+            System.out.println("Ocorreu um erro inesperado");
+          }
+
+          break;
+        }/*
         case 5: {
           imprimirContatos(controleAgenda.getContatos());
           break;
