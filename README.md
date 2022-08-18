@@ -21,3 +21,6 @@ verificando também se o instrumento tem Distorção para chamar o métodos emit
 
 - [X] Os métodos emitirSom() e emitirSomDistorcido(), implementados nos instrumentos, 
 devem retornar strings indicando qual instrumento está emitindo o som (normal ou distorcido)
+
+## Diagrama de classes
+![Diagrama de classes-p2 drawio](https://user-images.githubusercontent.com/58668142/185506944-c3592ae5-8771-4528-bc7c-66722e5a971f.png)
