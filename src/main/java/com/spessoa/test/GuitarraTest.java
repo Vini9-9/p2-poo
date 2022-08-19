@@ -6,7 +6,7 @@ import com.spessoa.modelo.instrumento.corda.Guitarra;
 import org.junit.Before;
 import org.junit.Test;
 
-class GuitarraTest {
+public class GuitarraTest {
 
   Guitarra guitarra;
   int numCorda = 5;
@@ -46,7 +46,5 @@ class GuitarraTest {
 
     assertEquals(esperado, guitarra.toString());
   }
-
-
 
 }
