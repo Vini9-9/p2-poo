@@ -26,5 +26,5 @@ devem retornar strings indicando qual instrumento está emitindo o som (normal o
 ![Diagrama de classes-p2 drawio](https://user-images.githubusercontent.com/58668142/185506944-c3592ae5-8771-4528-bc7c-66722e5a971f.png)
 
 ## Diagrama de caso de uso
-![Diagrama casos de uso drawio](https://user-images.githubusercontent.com/58668142/185521423-5cb5b42a-2194-4bae-9341-55370ff2ed28.png)
+![Diagrama casos de uso drawio (1)](https://user-images.githubusercontent.com/58668142/185522191-1fb47434-767e-4545-b492-d2b80f968c85.png)
 
