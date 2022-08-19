@@ -18,10 +18,10 @@ public class Piano extends Instrumento {
   private int numeroTeclas;
   private Boolean digital;
   private Armario armario;
-  private ArrayList<EfeitoSonoro> efeitoSonoros;
+  private ArrayList<EfeitoSonoro> efeitoSonoros = new ArrayList<>();
 
   public void adicionarEfeitoSonoro(EfeitoSonoro efeitoSonoro){
-    efeitoSonoros.add(efeitoSonoro);
+    this.efeitoSonoros.add(efeitoSonoro);
   }
 
   @Override
@@ -30,8 +30,8 @@ public class Piano extends Instrumento {
         "numeroPedais=" + numeroPedais +
         ", numeroTeclas=" + numeroTeclas +
         ", digital=" + digital +
-        ", armario=" + armario +
-        ", efeitoSonoros=" + efeitoSonoros +
+        ", armario=" + armario.getTipoMadeira() +
+        ", efeitoSonoros=" + efeitoSonoros.toString() +
         '}';
   }
 
